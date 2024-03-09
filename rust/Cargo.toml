@@ -1,0 +1,14 @@
+[package]
+name = "rust_lib_my_app"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+aws-config = "1.1.7"
+aws-sdk-dynamodb = "1.16.1"
+flutter_rust_bridge = "=2.0.0-dev.27"
+mysql = "*"
+tokio = { version = "1.36.0", features = ["full"] }
